@@ -62,9 +62,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Garage listings" id="IPc-S5-al7">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="io4-TM-ZKN">
+                        <barButtonItem key="rightBarButtonItem" title="New Listing" id="io4-TM-ZKN">
                             <connections>
-                                <segue destination="R99-pu-498" kind="show" id="dtH-er-47E"/>
+                                <segue destination="R99-pu-498" kind="show" id="8gi-14-xzP"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -76,7 +76,7 @@
         <!--New Listing-->
         <scene sceneID="TaD-b9-A7t">
             <objects>
-                <viewController id="R99-pu-498" sceneMemberID="viewController">
+                <viewController id="R99-pu-498" customClass="NewListingViewController" customModule="Garage_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qov-A5-d7c">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,6 +86,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="priceField:" destination="OJC-DF-Yji" eventType="editingDidEnd" id="pbi-nY-i9W"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tGs-DI-oKI">
                                 <rect key="frame" x="20" y="273" width="374" height="30"/>
@@ -105,12 +108,18 @@
                                     <constraint firstAttribute="height" constant="35" id="1ra-3k-Jdw"/>
                                 </constraints>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitTapped:" destination="R99-pu-498" eventType="touchUpInside" id="I1b-jz-h89"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vKy-eY-ewc">
                                 <rect key="frame" x="20" y="143" width="374" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="addressField:" destination="OJC-DF-Yji" eventType="editingDidEnd" id="Uhi-dE-Lu9"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -133,11 +142,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="41z-A6-6AQ"/>
                     </view>
-                    <navigationItem key="navigationItem" title="New Listing" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="never" id="Wti-DO-c7b">
+                    <navigationItem key="navigationItem" title="New Listing" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="never" id="Wti-DO-c7b" customClass="ViewController">
                         <barButtonItem key="backBarButtonItem" title="Cancel" id="TM6-HU-Qjd"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addressField" destination="vKy-eY-ewc" id="jXh-F5-WWz"/>
+                        <outlet property="emailField" destination="tGs-DI-oKI" id="vbs-t3-qIh"/>
+                        <outlet property="phoneNumField" destination="Ib4-QK-avn" id="OxV-AP-neU"/>
+                        <outlet property="priceField" destination="o5J-bR-P25" id="Xgu-32-uDs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NYf-hN-y9k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="OJC-DF-Yji" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1589.8550724637682" y="-226.33928571428569"/>
         </scene>

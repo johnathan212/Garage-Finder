@@ -165,7 +165,6 @@
 				FC90AFCD088CAC48A35094DC /* Pods-Garage FinderUITests.debug.xcconfig */,
 				19239E5B8EB670BD71AE6B0A /* Pods-Garage FinderUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
