@@ -72,7 +72,10 @@ class NewListingViewController: UIViewController, UINavigationControllerDelegate
         
         let uploadImageRef = imageReference.child(uniqueID)
         
-        let uploadTask = uploadImageRef.putData(imageData, metadata: nil)
+        let metaData = StorageMetadata()
+        metaData.contentType = "image/jpg"
+        
+        let uploadTask = uploadImageRef.putData(imageData, metadata: metaData)
         
         uploadTask.observe(.progress) { (snapshot) in
             print(snapshot.progress ?? "done")

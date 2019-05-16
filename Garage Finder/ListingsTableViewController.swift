@@ -12,9 +12,7 @@ import Firebase
 class ListingsTableViewController: UITableViewController {
     @IBOutlet weak var tableview: UITableView!
     var ref: DatabaseReference?
-    var imageReference: StorageReference{
-        return Storage.storage().reference().child("images")
-    }
+
     //labels for segue passing
     var addressLabel = ""
     var imageID = ""
@@ -60,9 +58,6 @@ class ListingsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableview.dequeueReusableCell(withIdentifier: "listingCell")
-//        cell?.textLabel?.text = listingData[indexPath.row]
-//        return cell!
         
         let cell = tableview.dequeueReusableCell(withIdentifier: "listingCell", for: indexPath) as! ListingCell
         
@@ -81,7 +76,7 @@ class ListingsTableViewController: UITableViewController {
 //        }
 //        downloadTask.resume()
 //
-        print(listing.address!)
+//        print(listing.address!)
 
         cell.textLabel?.text = listing.address
         
@@ -96,8 +91,10 @@ class ListingsTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! DetailsViewController
-        vc.address = self.addressLabel
-        vc.imageID = self.imageID
+        if(segue.identifier == "details"){
+            let vc = segue.destination as! DetailsViewController
+            vc.address = self.addressLabel
+            vc.imageID = self.imageID
+        }
     }
 }
