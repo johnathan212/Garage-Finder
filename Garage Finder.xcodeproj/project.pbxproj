@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		B01A90D8AC90682F43A480DD /* Pods_Garage_Finder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F484201289AD8A3FCB7DFE /* Pods_Garage_Finder.framework */; };
-		B8C1432D228B3CA20098C132 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C1432C228B3CA20098C132 /* Model.swift */; };
+		B8C1432D228B3CA20098C132 /* GarageListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C1432C228B3CA20098C132 /* GarageListing.swift */; };
 		B8C1432F228BB57A0098C132 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8C1432E228BB57A0098C132 /* GoogleService-Info.plist */; };
+		B8EECD42228C7AE30065D4A9 /* ListingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EECD41228C7AE30065D4A9 /* ListingsTableViewController.swift */; };
+		B8EECD44228CAB9C0065D4A9 /* ListingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EECD43228CAB9C0065D4A9 /* ListingCell.swift */; };
 		B8FDDB542289256800173DDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FDDB532289256800173DDA /* AppDelegate.swift */; };
 		B8FDDB562289256800173DDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FDDB552289256800173DDA /* ViewController.swift */; };
 		B8FDDB592289256800173DDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8FDDB572289256800173DDA /* Main.storyboard */; };
@@ -42,8 +44,10 @@
 		2323988B97F933E511A5D246 /* Pods-Garage Finder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Garage Finder.debug.xcconfig"; path = "Target Support Files/Pods-Garage Finder/Pods-Garage Finder.debug.xcconfig"; sourceTree = "<group>"; };
 		9FE8742430530EC2AD59452B /* Pods_Garage_FinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Garage_FinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F484201289AD8A3FCB7DFE /* Pods_Garage_Finder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Garage_Finder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8C1432C228B3CA20098C132 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Model.swift; path = Models/Model.swift; sourceTree = "<group>"; };
+		B8C1432C228B3CA20098C132 /* GarageListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GarageListing.swift; path = Models/GarageListing.swift; sourceTree = "<group>"; };
 		B8C1432E228BB57A0098C132 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B8EECD41228C7AE30065D4A9 /* ListingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsTableViewController.swift; sourceTree = "<group>"; };
+		B8EECD43228CAB9C0065D4A9 /* ListingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingCell.swift; sourceTree = "<group>"; };
 		B8FDDB502289256800173DDA /* Garage Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Garage Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8FDDB532289256800173DDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8FDDB552289256800173DDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -126,10 +130,12 @@
 		B8FDDB522289256800173DDA /* Garage Finder */ = {
 			isa = PBXGroup;
 			children = (
+				B8EECD41228C7AE30065D4A9 /* ListingsTableViewController.swift */,
 				B8FDDB532289256800173DDA /* AppDelegate.swift */,
 				B8FDDB552289256800173DDA /* ViewController.swift */,
 				B8FDDB572289256800173DDA /* Main.storyboard */,
-				B8C1432C228B3CA20098C132 /* Model.swift */,
+				B8EECD43228CAB9C0065D4A9 /* ListingCell.swift */,
+				B8C1432C228B3CA20098C132 /* GarageListing.swift */,
 				B8FDDB5A2289256C00173DDA /* Assets.xcassets */,
 				B8C1432E228BB57A0098C132 /* GoogleService-Info.plist */,
 				B8FDDB5F2289256C00173DDA /* Info.plist */,
@@ -398,7 +404,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8C1432D228B3CA20098C132 /* Model.swift in Sources */,
+				B8EECD44228CAB9C0065D4A9 /* ListingCell.swift in Sources */,
+				B8C1432D228B3CA20098C132 /* GarageListing.swift in Sources */,
+				B8EECD42228C7AE30065D4A9 /* ListingsTableViewController.swift in Sources */,
 				B8FDDB562289256800173DDA /* ViewController.swift in Sources */,
 				B8FDDB542289256800173DDA /* AppDelegate.swift in Sources */,
 			);

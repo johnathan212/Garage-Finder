@@ -13,52 +13,41 @@
         <!--Garage listings-->
         <scene sceneID="DgT-hv-Woc">
             <objects>
-                <tableViewController id="bD0-GM-gvj" sceneMemberID="viewController">
+                <tableViewController id="bD0-GM-gvj" customClass="ListingsTableViewController" customModule="Garage_Finder" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9Me-G5-ftE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GarageListing" rowHeight="164" id="cFj-Pw-G7m">
-                                <rect key="frame" x="0.0" y="28" width="414" height="164"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="listingCell" id="Bdm-cA-7FG" customClass="ListingCell" customModule="Garage_Finder">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cFj-Pw-G7m" id="d2U-Gk-C7o">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="163.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bdm-cA-7FG" id="6gV-tg-7QM" customClass="ListingCell" customModule="Garage_Finder">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0fI-l4-oGn">
-                                            <rect key="frame" x="0.0" y="1.5" width="414" height="162"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="100" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EpL-Hb-hPi">
-                                                    <rect key="frame" x="0.0" y="0.0" width="316" height="162"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="316" id="26W-kk-CsJ"/>
-                                                        <constraint firstAttribute="height" constant="162" id="FTM-LM-K1b"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lW9-mH-Qxh">
-                                                    <rect key="frame" x="326" y="141.5" width="88" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOi-ge-Wih">
+                                            <rect key="frame" x="0.0" y="-9" width="414" height="53"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="0fI-l4-oGn" secondAttribute="bottom" id="4BA-Xp-Eu4"/>
-                                        <constraint firstAttribute="trailing" secondItem="0fI-l4-oGn" secondAttribute="trailing" id="FLs-KD-QRZ"/>
-                                        <constraint firstItem="0fI-l4-oGn" firstAttribute="leading" secondItem="d2U-Gk-C7o" secondAttribute="leading" id="LMI-F3-SC2"/>
+                                        <constraint firstAttribute="trailing" secondItem="DOi-ge-Wih" secondAttribute="trailing" id="DGX-hx-aqq"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="DOi-ge-Wih" secondAttribute="bottom" constant="-11" id="ZAi-DH-oj8"/>
+                                        <constraint firstItem="DOi-ge-Wih" firstAttribute="top" secondItem="6gV-tg-7QM" secondAttribute="topMargin" constant="-20" id="li1-jC-zJP"/>
+                                        <constraint firstItem="DOi-ge-Wih" firstAttribute="leading" secondItem="6gV-tg-7QM" secondAttribute="leading" id="ujA-Y0-pWn"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="qWf-Je-Gcg" kind="show" id="YdG-oj-Aox"/>
+                                    <outlet property="addressLabel" destination="6gV-tg-7QM" id="ivp-E5-0aM"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="bD0-GM-gvj" id="7LH-dd-Aee"/>
-                            <outlet property="delegate" destination="bD0-GM-gvj" id="9L8-17-eU3"/>
+                            <outlet property="dataSource" destination="bD0-GM-gvj" id="f4n-2h-82A"/>
+                            <outlet property="delegate" destination="bD0-GM-gvj" id="dQ7-m3-VHH"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Garage listings" id="IPc-S5-al7">
@@ -68,6 +57,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableview" destination="9Me-G5-ftE" id="zP9-6b-b4a"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VJg-a5-R41" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -156,22 +148,6 @@
                 <exit id="OJC-DF-Yji" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1589.8550724637682" y="-226.33928571428569"/>
-        </scene>
-        <!--Title-->
-        <scene sceneID="V6d-No-U4W">
-            <objects>
-                <viewController id="qWf-Je-Gcg" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="61c-O7-abr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="h9U-8C-q66"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="never" id="NvK-NX-1nF"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TNB-O2-IMq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1587" y="412"/>
         </scene>
         <!--HomeViewController-->
         <scene sceneID="EvF-rs-5Zh">

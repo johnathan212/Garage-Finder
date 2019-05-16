@@ -33,7 +33,11 @@ class NewListingViewController: UIViewController {
             "Email": emailField.text,
             "Phone": phoneNumField.text
         ]
-        ref.child("Garage Listings").childByAutoId().setValue(post)
+        ref.child("listings").childByAutoId().setValue(post)
+        addressField.text = ""
+        priceField.text = ""
+        emailField.text = ""
+        phoneNumField.text = ""
     }
     
     
@@ -48,4 +52,5 @@ extension UIViewController : UITextFieldDelegate {
         return true
     }
 }
+
 
