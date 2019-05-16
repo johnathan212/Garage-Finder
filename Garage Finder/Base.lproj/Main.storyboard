@@ -19,29 +19,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="listingCell" id="Bdm-cA-7FG" customClass="ListingCell" customModule="Garage_Finder">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="listingCell" rowHeight="269" id="Bdm-cA-7FG" customClass="ListingCell" customModule="Garage_Finder">
+                                <rect key="frame" x="0.0" y="28" width="414" height="269"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bdm-cA-7FG" id="6gV-tg-7QM" customClass="ListingCell" customModule="Garage_Finder">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="268.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOi-ge-Wih">
-                                            <rect key="frame" x="0.0" y="-9" width="414" height="53"/>
+                                            <rect key="frame" x="0.0" y="-9" width="414" height="46"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="46" id="JfF-L9-VoV"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ah-Hv-Fe4">
+                                            <rect key="frame" x="0.0" y="45" width="414" height="213"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="DOi-ge-Wih" secondAttribute="trailing" id="DGX-hx-aqq"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="DOi-ge-Wih" secondAttribute="bottom" constant="-11" id="ZAi-DH-oj8"/>
-                                        <constraint firstItem="DOi-ge-Wih" firstAttribute="top" secondItem="6gV-tg-7QM" secondAttribute="topMargin" constant="-20" id="li1-jC-zJP"/>
-                                        <constraint firstItem="DOi-ge-Wih" firstAttribute="leading" secondItem="6gV-tg-7QM" secondAttribute="leading" id="ujA-Y0-pWn"/>
+                                        <constraint firstItem="DOi-ge-Wih" firstAttribute="top" secondItem="6gV-tg-7QM" secondAttribute="topMargin" constant="-20" id="dm0-By-UAt"/>
+                                        <constraint firstItem="DOi-ge-Wih" firstAttribute="leading" secondItem="6gV-tg-7QM" secondAttribute="leading" id="seI-7Z-sE0"/>
+                                        <constraint firstAttribute="trailing" secondItem="DOi-ge-Wih" secondAttribute="trailing" id="zma-W8-5yJ"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="addressLabel" destination="6gV-tg-7QM" id="ivp-E5-0aM"/>
+                                    <outlet property="imageView" destination="3ah-Hv-Fe4" id="p9e-Id-Y6O"/>
+                                    <segue destination="f4Q-vX-l1q" kind="show" id="wZS-3v-7Mn"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -64,6 +72,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VJg-a5-R41" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="682.60869565217399" y="64.955357142857139"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="kPf-2i-cHT">
+            <objects>
+                <viewController id="f4Q-vX-l1q" customClass="DetailsViewController" customModule="Garage_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tHg-4D-b3b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vtq-5A-qo6">
+                                <rect key="frame" x="0.0" y="88" width="414" height="411"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fGO-7n-hV1"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Vtq-5A-qo6" id="7yc-eg-nnT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IRa-no-xKW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1605.7971014492755" y="413.83928571428572"/>
         </scene>
         <!--New Listing-->
         <scene sceneID="TaD-b9-A7t">
@@ -116,6 +148,8 @@
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pob-rn-W0w">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVy-rT-nZL">
                                         <rect key="frame" x="243" y="43" width="151" height="42"/>

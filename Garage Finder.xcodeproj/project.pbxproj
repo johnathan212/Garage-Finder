@@ -12,6 +12,8 @@
 		B8C1432F228BB57A0098C132 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8C1432E228BB57A0098C132 /* GoogleService-Info.plist */; };
 		B8EECD42228C7AE30065D4A9 /* ListingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EECD41228C7AE30065D4A9 /* ListingsTableViewController.swift */; };
 		B8EECD44228CAB9C0065D4A9 /* ListingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EECD43228CAB9C0065D4A9 /* ListingCell.swift */; };
+		B8EECD48228D37180065D4A9 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EECD47228D37180065D4A9 /* DetailsViewController.swift */; };
+		B8EECD4E228D42210065D4A9 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = B8EECD4D228D42210065D4A9 /* default.png */; };
 		B8FDDB542289256800173DDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FDDB532289256800173DDA /* AppDelegate.swift */; };
 		B8FDDB562289256800173DDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FDDB552289256800173DDA /* ViewController.swift */; };
 		B8FDDB592289256800173DDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8FDDB572289256800173DDA /* Main.storyboard */; };
@@ -49,6 +51,8 @@
 		B8C1432E228BB57A0098C132 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B8EECD41228C7AE30065D4A9 /* ListingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsTableViewController.swift; sourceTree = "<group>"; };
 		B8EECD43228CAB9C0065D4A9 /* ListingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingCell.swift; sourceTree = "<group>"; };
+		B8EECD47228D37180065D4A9 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		B8EECD4D228D42210065D4A9 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
 		B8FDDB502289256800173DDA /* Garage Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Garage Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8FDDB532289256800173DDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8FDDB552289256800173DDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,8 +137,10 @@
 				B8EECD41228C7AE30065D4A9 /* ListingsTableViewController.swift */,
 				B8FDDB532289256800173DDA /* AppDelegate.swift */,
 				B8FDDB552289256800173DDA /* ViewController.swift */,
+				B8EECD47228D37180065D4A9 /* DetailsViewController.swift */,
 				B8FDDB572289256800173DDA /* Main.storyboard */,
 				B8EECD43228CAB9C0065D4A9 /* ListingCell.swift */,
+				B8EECD4D228D42210065D4A9 /* default.png */,
 				B8C1432C228B3CA20098C132 /* GarageListing.swift */,
 				B8FDDB5A2289256C00173DDA /* Assets.xcassets */,
 				B8C1432E228BB57A0098C132 /* GoogleService-Info.plist */,
@@ -284,6 +290,7 @@
 				B8FDDB5B2289256C00173DDA /* Assets.xcassets in Resources */,
 				B8FDDB592289256800173DDA /* Main.storyboard in Resources */,
 				B8C1432F228BB57A0098C132 /* GoogleService-Info.plist in Resources */,
+				B8EECD4E228D42210065D4A9 /* default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +389,7 @@
 				B8EECD42228C7AE30065D4A9 /* ListingsTableViewController.swift in Sources */,
 				B8FDDB562289256800173DDA /* ViewController.swift in Sources */,
 				B8FDDB542289256800173DDA /* AppDelegate.swift in Sources */,
+				B8EECD48228D37180065D4A9 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

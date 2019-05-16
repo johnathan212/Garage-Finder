@@ -53,11 +53,14 @@ class NewListingViewController: UIViewController, UINavigationControllerDelegate
     }
     //add textfield input to firebase database
     @IBAction func submitTapped(_ sender: Any){
+        var uniqueID = UUID().uuidString
+        uniqueID += ".jpg"
         let listing = [
-            "Address": addressField.text,
-            "Price": priceField.text,
-            "Email": emailField.text,
-            "Phone": phoneNumField.text]
+            "Address": addressField.text as String?,
+            "Price": priceField.text as String?,
+            "Email": emailField.text as String?,
+            "Phone": phoneNumField.text as String?,
+            "Image": uniqueID]
         ref.child("listings").childByAutoId().setValue(listing)
         addressField.text = ""
         priceField.text = ""
@@ -66,8 +69,7 @@ class NewListingViewController: UIViewController, UINavigationControllerDelegate
         
         guard let image = imageView.image else { return}
         guard let imageData = image.jpegData(compressionQuality: 0) else { return}
-        var uniqueID = UUID().uuidString
-        uniqueID += ".jpg"
+        
         let uploadImageRef = imageReference.child(uniqueID)
         
         let uploadTask = uploadImageRef.putData(imageData, metadata: nil)
@@ -76,6 +78,8 @@ class NewListingViewController: UIViewController, UINavigationControllerDelegate
             print(snapshot.progress ?? "done")
         }
         uploadTask.resume()
+        
+        imageView.image = nil
     }
     
     

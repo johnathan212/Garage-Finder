@@ -12,6 +12,9 @@ import Firebase
 class ListingsTableViewController: UITableViewController {
     @IBOutlet weak var tableview: UITableView!
     var ref: DatabaseReference?
+    var imageReference: StorageReference{
+        return Storage.storage().reference().child("images")
+    }
     
 //    var listingData = [String]()
     var listingData = [GarageListing]()
@@ -32,8 +35,9 @@ class ListingsTableViewController: UITableViewController {
                 let price = listing?["Price"]
                 let email = listing?["Email"]
                 let phone = listing?["Phone"]
+                let image = listing?["Image"]
 
-                let newListing = GarageListing(address: address as? String, price: price as? Int, email: email as? String, phone: phone as? Int)
+                let newListing = GarageListing(address: address as? String, price: price as? Int, email: email as? String, phone: phone as? Int, image: image as? String)
 
                 self.listingData.append(newListing)
             print(snapshot.childrenCount)
@@ -42,6 +46,7 @@ class ListingsTableViewController: UITableViewController {
         })
     
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -62,6 +67,18 @@ class ListingsTableViewController: UITableViewController {
         let listing: GarageListing
         listing = listingData[indexPath.row]
         
+//        let databaseImageRef = imageReference.child(listing.image!)
+//
+//        let downloadTask = databaseImageRef.getData(maxSize: 1024 * 1024) { (data, error) in
+//            if let data = data {
+//                let image = UIImage(data: data)
+//
+//                cell.cellImageView.image = image
+//                cell.cellImageView.contentMode = .s
+//            }
+//        }
+//        downloadTask.resume()
+//
         print(listing.address!)
 //        cell.addressLabel!.textLabel?.text = listing.address
         cell.textLabel?.text = listing.address

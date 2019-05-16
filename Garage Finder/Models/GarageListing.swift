@@ -14,11 +14,13 @@ class GarageListing{
     var price: Int?
     var email: String?
     var phone: Int?
+    var image: String?
     
-    init(address:String?, price:Int?, email:String?, phone:Int?) {
+    init(address:String?, price:Int?, email:String?, phone:Int?, image:String?) {
         self.address = address
         self.price = price
         self.email = email
         self.phone = phone
+        self.image = image
     }
 }
