@@ -15,8 +15,9 @@ class ListingsTableViewController: UITableViewController {
     var imageReference: StorageReference{
         return Storage.storage().reference().child("images")
     }
-    //labels
+    //labels for segue passing
     var addressLabel = ""
+    var imageID = ""
     
     var listingData = [GarageListing]()
     var databaseHandle:DatabaseHandle?
@@ -90,12 +91,13 @@ class ListingsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         addressLabel = listingData[indexPath.row].address!
+        imageID = listingData[indexPath.row].image!
         performSegue(withIdentifier: "details", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! DetailsViewController
         vc.address = self.addressLabel
-        
+        vc.imageID = self.imageID
     }
 }

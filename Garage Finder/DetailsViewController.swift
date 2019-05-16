@@ -11,6 +11,7 @@ import UIKit
 class DetailsViewController: UIViewController {
     @IBOutlet weak var addressLabel: UILabel!
     var address: String!
+    var imageID: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +19,7 @@ class DetailsViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         addressLabel.text = address
+        print("imageID: \(imageID ?? "missing")")
     
     }
 }
