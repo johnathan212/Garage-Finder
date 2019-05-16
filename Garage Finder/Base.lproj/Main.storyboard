@@ -26,25 +26,11 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="268.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOi-ge-Wih">
-                                            <rect key="frame" x="0.0" y="-9" width="414" height="46"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="46" id="JfF-L9-VoV"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ah-Hv-Fe4">
-                                            <rect key="frame" x="0.0" y="45" width="414" height="213"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="default.png" translatesAutoresizingMaskIntoConstraints="NO" id="3ah-Hv-Fe4">
+                                            <rect key="frame" x="0.0" y="33" width="394" height="225"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstItem="DOi-ge-Wih" firstAttribute="top" secondItem="6gV-tg-7QM" secondAttribute="topMargin" constant="-20" id="dm0-By-UAt"/>
-                                        <constraint firstItem="DOi-ge-Wih" firstAttribute="leading" secondItem="6gV-tg-7QM" secondAttribute="leading" id="seI-7Z-sE0"/>
-                                        <constraint firstAttribute="trailing" secondItem="DOi-ge-Wih" secondAttribute="trailing" id="zma-W8-5yJ"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="addressLabel" destination="6gV-tg-7QM" id="ivp-E5-0aM"/>
@@ -224,29 +210,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Garage Finder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MnM-of-TUF">
-                                <rect key="frame" x="86" y="190" width="242" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHG-sd-sO9">
-                                <rect key="frame" x="161" y="497" width="92" height="48"/>
+                                <rect key="frame" x="161" y="581" width="92" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="dzd-WH-NNb"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="ENTER"/>
                                 <connections>
                                     <segue destination="s6x-yi-bgt" kind="show" id="tKB-bx-omG"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default.png" translatesAutoresizingMaskIntoConstraints="NO" id="aCA-PB-pkF">
+                                <rect key="frame" x="20" y="246" width="374" height="243"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Garage Finder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MnM-of-TUF">
+                                <rect key="frame" x="86" y="145" width="242" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="JZa-Dg-7MI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="w5f-wq-mcX" firstAttribute="trailing" secondItem="tHG-sd-sO9" secondAttribute="trailing" constant="161" id="27l-Nk-Xst"/>
-                            <constraint firstItem="w5f-wq-mcX" firstAttribute="bottom" secondItem="tHG-sd-sO9" secondAttribute="bottom" constant="317" id="50b-F7-KGl"/>
-                            <constraint firstItem="tHG-sd-sO9" firstAttribute="leading" secondItem="w5f-wq-mcX" secondAttribute="leading" constant="161" id="Ju8-8o-WNM"/>
-                            <constraint firstItem="w5f-wq-mcX" firstAttribute="trailing" secondItem="MnM-of-TUF" secondAttribute="trailing" constant="86" id="S6J-8x-UE5"/>
-                            <constraint firstItem="MnM-of-TUF" firstAttribute="leading" secondItem="w5f-wq-mcX" secondAttribute="leading" constant="86" id="djR-w5-eYV"/>
-                            <constraint firstItem="MnM-of-TUF" firstAttribute="top" secondItem="w5f-wq-mcX" secondAttribute="top" constant="146" id="u9i-Yb-ohJ"/>
+                            <constraint firstItem="MnM-of-TUF" firstAttribute="top" secondItem="w5f-wq-mcX" secondAttribute="top" constant="101" id="8lI-JR-ETr"/>
+                            <constraint firstItem="tHG-sd-sO9" firstAttribute="top" secondItem="aCA-PB-pkF" secondAttribute="bottom" constant="92" id="B7P-5b-9Nz"/>
+                            <constraint firstItem="aCA-PB-pkF" firstAttribute="leading" secondItem="K6S-HP-0An" secondAttribute="leadingMargin" id="Dih-Zg-Mg5"/>
+                            <constraint firstItem="aCA-PB-pkF" firstAttribute="top" secondItem="MnM-of-TUF" secondAttribute="bottom" constant="53" id="UZv-oc-gHI"/>
+                            <constraint firstItem="aCA-PB-pkF" firstAttribute="trailing" secondItem="K6S-HP-0An" secondAttribute="trailingMargin" id="bGz-3b-mR1"/>
+                            <constraint firstItem="MnM-of-TUF" firstAttribute="centerX" secondItem="aCA-PB-pkF" secondAttribute="centerX" id="icO-7Z-8rN"/>
+                            <constraint firstItem="aCA-PB-pkF" firstAttribute="centerX" secondItem="tHG-sd-sO9" secondAttribute="centerX" id="tZV-vL-t6t"/>
+                            <constraint firstItem="w5f-wq-mcX" firstAttribute="bottom" secondItem="tHG-sd-sO9" secondAttribute="bottom" constant="233" id="vjK-h2-dgX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="w5f-wq-mcX"/>
                     </view>
@@ -275,4 +272,7 @@
             <point key="canvasLocation" x="-236" y="65"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="default.png" width="276" height="255"/>
+    </resources>
 </document>

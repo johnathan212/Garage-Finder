@@ -22,6 +22,7 @@ class ListingsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableview.rowHeight = 100
         
         tableview.delegate = self
         tableview.dataSource = self
@@ -64,19 +65,6 @@ class ListingsTableViewController: UITableViewController {
         let listing: GarageListing
         listing = listingData[indexPath.row]
         
-//        let databaseImageRef = imageReference.child(listing.image!)
-//
-//        let downloadTask = databaseImageRef.getData(maxSize: 1024 * 1024) { (data, error) in
-//            if let data = data {
-//                let image = UIImage(data: data)
-//
-//                cell.cellImageView.image = image
-//                cell.cellImageView.contentMode = .s
-//            }
-//        }
-//        downloadTask.resume()
-//
-//        print(listing.address!)
 
         cell.textLabel?.text = listing.address
         
