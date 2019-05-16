@@ -60,7 +60,7 @@
                     <navigationItem key="navigationItem" title="Garage listings" id="IPc-S5-al7">
                         <barButtonItem key="rightBarButtonItem" title="New Listing" id="io4-TM-ZKN">
                             <connections>
-                                <segue destination="R99-pu-498" kind="show" id="8gi-14-xzP"/>
+                                <segue destination="R99-pu-498" kind="show" identifier="new" id="8gi-14-xzP"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -87,6 +87,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mlx-i8-5Xk">
+                                <rect key="frame" x="20" y="171" width="374" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -99,6 +103,7 @@
                     </view>
                     <connections>
                         <outlet property="addressLabel" destination="3Fm-nB-Yr0" id="N6x-uc-Bln"/>
+                        <outlet property="image" destination="Mlx-i8-5Xk" id="VNX-Au-8lw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IRa-no-xKW" userLabel="First Responder" sceneMemberID="firstResponder"/>
