@@ -25,6 +25,9 @@ class NewListingViewController: UIViewController, UINavigationControllerDelegate
             //after completion
         }
     }
+    var imageReference: StorageReference {
+        return Storage.storage().reference().child("images")
+    }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
@@ -61,7 +64,18 @@ class NewListingViewController: UIViewController, UINavigationControllerDelegate
         emailField.text = ""
         phoneNumField.text = ""
         
+        guard let image = imageView.image else { return}
+        guard let imageData = image.jpegData(compressionQuality: 0) else { return}
+        var uniqueID = UUID().uuidString
+        uniqueID += ".jpg"
+        let uploadImageRef = imageReference.child(uniqueID)
         
+        let uploadTask = uploadImageRef.putData(imageData, metadata: nil)
+        
+        uploadTask.observe(.progress) { (snapshot) in
+            print(snapshot.progress ?? "done")
+        }
+        uploadTask.resume()
     }
     
     
