@@ -9,15 +9,15 @@
 import UIKit
 
 class DetailsViewController: UIViewController {
-    @IBOutlet var imageView: UIImageView!
+    @IBOutlet weak var addressLabel: UILabel!
+    var address: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let image = UIImage(named: "default.png")
-        imageView.image = image
-
+        
+        addressLabel.text = address
     
     }
 }

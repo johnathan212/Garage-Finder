@@ -15,8 +15,9 @@ class ListingsTableViewController: UITableViewController {
     var imageReference: StorageReference{
         return Storage.storage().reference().child("images")
     }
+    //labels
+    var addressLabel = ""
     
-//    var listingData = [String]()
     var listingData = [GarageListing]()
     var databaseHandle:DatabaseHandle?
 
@@ -80,9 +81,21 @@ class ListingsTableViewController: UITableViewController {
 //        downloadTask.resume()
 //
         print(listing.address!)
-//        cell.addressLabel!.textLabel?.text = listing.address
+
         cell.textLabel?.text = listing.address
+        
         print(listing.address ?? "broken")
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        addressLabel = listingData[indexPath.row].address!
+        performSegue(withIdentifier: "details", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! DetailsViewController
+        vc.address = self.addressLabel
+        
     }
 }

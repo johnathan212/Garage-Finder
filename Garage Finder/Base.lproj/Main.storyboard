@@ -49,7 +49,6 @@
                                 <connections>
                                     <outlet property="addressLabel" destination="6gV-tg-7QM" id="ivp-E5-0aM"/>
                                     <outlet property="imageView" destination="3ah-Hv-Fe4" id="p9e-Id-Y6O"/>
-                                    <segue destination="f4Q-vX-l1q" kind="show" id="wZS-3v-7Mn"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -67,6 +66,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableview" destination="9Me-G5-ftE" id="zP9-6b-b4a"/>
+                        <segue destination="f4Q-vX-l1q" kind="show" identifier="details" id="XG6-dZ-ZP8"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VJg-a5-R41" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -81,16 +81,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vtq-5A-qo6">
-                                <rect key="frame" x="0.0" y="88" width="414" height="411"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fm-nB-Yr0">
+                                <rect key="frame" x="20" y="117" width="374" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fGO-7n-hV1" firstAttribute="bottom" secondItem="3Fm-nB-Yr0" secondAttribute="bottom" constant="699" id="HfV-v4-Xpa"/>
+                            <constraint firstItem="3Fm-nB-Yr0" firstAttribute="leading" secondItem="tHg-4D-b3b" secondAttribute="leadingMargin" id="aYn-nS-Bpu"/>
+                            <constraint firstItem="3Fm-nB-Yr0" firstAttribute="trailing" secondItem="tHg-4D-b3b" secondAttribute="trailingMargin" id="tfi-Y2-hHc"/>
+                            <constraint firstItem="3Fm-nB-Yr0" firstAttribute="top" secondItem="fGO-7n-hV1" secondAttribute="top" constant="29" id="vWl-iQ-FSQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fGO-7n-hV1"/>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="Vtq-5A-qo6" id="7yc-eg-nnT"/>
+                        <outlet property="addressLabel" destination="3Fm-nB-Yr0" id="N6x-uc-Bln"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IRa-no-xKW" userLabel="First Responder" sceneMemberID="firstResponder"/>
