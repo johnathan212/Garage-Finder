@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Garage Finder/ListingsTableViewController.swift"
-            timestampString = "579742043.99186"
+            timestampString = "579743888.290224"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "ListingsTableViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Garage Finder/ListingsTableViewController.swift"
-            timestampString = "579742043.991953"
+            timestampString = "579743888.290817"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Garage Finder/ListingCell.swift"
-            timestampString = "579742043.992029"
+            timestampString = "579743888.291798"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
@@ -56,11 +56,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Garage Finder/ListingsTableViewController.swift"
-            timestampString = "579742043.9921"
+            timestampString = "579743888.292015"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -72,11 +72,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Garage Finder/DetailsViewController.swift"
-            timestampString = "579741396.249"
+            timestampString = "579743888.292836"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -88,109 +88,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Garage Finder/DetailsViewController.swift"
-            timestampString = "579741396.249114"
+            timestampString = "579743888.2929291"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Garage Finder/DetailsViewController.swift"
-            timestampString = "579741396.2492059"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Garage_Finder.DetailsViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "Garage Finder"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Johnathan/Desktop/Garage%20Finder/Garage%20Finder/DetailsViewController.swift"
-                  timestampString = "579739647.550301"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "1243">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Garage_Finder.DetailsViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "Garage Finder"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Johnathan/Desktop/Garage%20Finder/Garage%20Finder/DetailsViewController.swift"
-                  timestampString = "579739647.556218"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "185">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Garage Finder/DetailsViewController.swift"
-            timestampString = "579741396.249288"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Garage_Finder.DetailsViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "Garage Finder"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Johnathan/Desktop/Garage%20Finder/Garage%20Finder/DetailsViewController.swift"
-                  timestampString = "579739659.365265"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "1476">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Garage_Finder.DetailsViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "Garage Finder"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Johnathan/Desktop/Garage%20Finder/Garage%20Finder/DetailsViewController.swift"
-                  timestampString = "579739659.368681"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "185">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

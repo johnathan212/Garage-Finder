@@ -12,9 +12,15 @@ import Firebase
 class DetailsViewController: UIViewController {
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
     
     var address: String!
     var imageID: String!
+    var price: String!
+    var email: String!
+    var phone: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,15 +30,11 @@ class DetailsViewController: UIViewController {
         }
 
         addressLabel.text = address
+        priceLabel.text = String(price)
+        emailLabel.text = email
+        phoneLabel.text = String(phone)
         print("imageID: \(imageID ?? "missing")")
-//        let databaseImageRef = imageReference.child(imageID)
-        
-//            let downloadTask = databaseImageRef.getData(maxSize: 1 * 1024 * 1024) { (data, error) in
-//                if let data = data {
-//                    let newImage = UIImage(data: data)
-//                    //self.image.image = newImage
-//                }
-//            }
+
         print(imageReference)
         
         

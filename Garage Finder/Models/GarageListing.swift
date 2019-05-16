@@ -11,12 +11,12 @@ import Foundation
 
 class GarageListing{
     var address: String?
-    var price: Int?
+    var price: String?
     var email: String?
-    var phone: Int?
+    var phone: String?
     var image: String?
     
-    init(address:String?, price:Int?, email:String?, phone:Int?, image:String?) {
+    init(address:String?, price:String?, email:String?, phone:String?, image:String?) {
         self.address = address
         self.price = price
         self.email = email

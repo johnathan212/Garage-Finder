@@ -16,6 +16,9 @@ class ListingsTableViewController: UITableViewController {
     //labels for segue passing
     var addressLabel = ""
     var imageID = ""
+    var priceLabel = ""
+    var emailLabel = ""
+    var phoneLabel = ""
     
     var listingData = [GarageListing]()
     var databaseHandle:DatabaseHandle?
@@ -38,7 +41,7 @@ class ListingsTableViewController: UITableViewController {
                 let phone = listing?["Phone"]
                 let image = listing?["Image"]
 
-                let newListing = GarageListing(address: address as? String, price: price as? Int, email: email as? String, phone: phone as? Int, image: image as? String)
+                let newListing = GarageListing(address: address as? String, price: price as? String, email: email as? String, phone: phone as? String, image: image as? String)
 
                 self.listingData.append(newListing)
             print(snapshot.childrenCount)
@@ -67,6 +70,7 @@ class ListingsTableViewController: UITableViewController {
         
 
         cell.textLabel?.text = listing.address
+        cell.textLabel?.font = cell.textLabel?.font.withSize(20)
         
         print(listing.address ?? "broken")
         return cell
@@ -75,6 +79,9 @@ class ListingsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         addressLabel = listingData[indexPath.row].address!
         imageID = listingData[indexPath.row].image!
+        priceLabel = String(listingData[indexPath.row].price!)
+        emailLabel = listingData[indexPath.row].email!
+        phoneLabel = String(listingData[indexPath.row].phone!)
         performSegue(withIdentifier: "details", sender: self)
     }
     
@@ -83,6 +90,9 @@ class ListingsTableViewController: UITableViewController {
             let vc = segue.destination as! DetailsViewController
             vc.address = self.addressLabel
             vc.imageID = self.imageID
+            vc.price = self.priceLabel
+            vc.email = self.emailLabel
+            vc.phone = self.phoneLabel
         }
     }
 }
