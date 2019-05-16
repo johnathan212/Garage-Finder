@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import FirebaseDatabase
+import Firebase
 
 class ListingsTableViewController: UITableViewController {
     @IBOutlet weak var tableview: UITableView!

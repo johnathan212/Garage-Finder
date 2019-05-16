@@ -7,6 +7,9 @@ PODS:
   - Firebase/Database (6.0.0):
     - Firebase/CoreOnly
     - FirebaseDatabase (~> 6.0.0)
+  - Firebase/Storage (6.0.0):
+    - Firebase/CoreOnly
+    - FirebaseStorage (~> 3.2.0)
   - FirebaseAnalytics (6.0.0):
     - FirebaseCore (~> 6.0)
     - FirebaseInstanceID (~> 4.0)
@@ -28,6 +31,10 @@ PODS:
     - FirebaseCore (~> 6.0)
     - GoogleUtilities/Environment (~> 6.0)
     - GoogleUtilities/UserDefaults (~> 6.0)
+  - FirebaseStorage (3.2.0):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 6.0)
+    - GTMSessionFetcher/Core (~> 1.1)
   - GoogleAppMeasurement (6.0.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
     - GoogleUtilities/MethodSwizzler (~> 6.0)
@@ -52,6 +59,7 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (6.1.0):
     - GoogleUtilities/Logger
+  - GTMSessionFetcher/Core (1.2.1)
   - leveldb-library (1.20)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
@@ -62,6 +70,7 @@ PODS:
 DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
+  - Firebase/Storage
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -71,8 +80,10 @@ SPEC REPOS:
     - FirebaseCore
     - FirebaseDatabase
     - FirebaseInstanceID
+    - FirebaseStorage
     - GoogleAppMeasurement
     - GoogleUtilities
+    - GTMSessionFetcher
     - leveldb-library
     - nanopb
 
@@ -83,11 +94,13 @@ SPEC CHECKSUMS:
   FirebaseCore: e38f025287b413255a53acc1945d048a112047f7
   FirebaseDatabase: f48e067716864be2b855cf716b927ef375d6cfa0
   FirebaseInstanceID: 0e0348a3c00a734fa376a070f5ad4533ad975cb5
+  FirebaseStorage: ff1e8f1f6cf1557a8694b0ef39d3e72cb60c42ac
   GoogleAppMeasurement: 7f028ea162b72c8f326daec74afc95d94f7a47d6
   GoogleUtilities: 84df567c76ca84f67b7bb40e769fdd4acc746a10
+  GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
-PODFILE CHECKSUM: 2fe6f0185e8cc336eea77f96297ea6b05a0e20d5
+PODFILE CHECKSUM: 37b0f464bd18c6f4e8bfe5680b6795ba23159cc9
 
 COCOAPODS: 1.6.1

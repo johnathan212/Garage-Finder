@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B01A90D8AC90682F43A480DD /* Pods_Garage_Finder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F484201289AD8A3FCB7DFE /* Pods_Garage_Finder.framework */; };
+		164F68DB8139E4E7E8A7946A /* libPods-Garage Finder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD836CCCE2C9743CABCF530 /* libPods-Garage Finder.a */; };
 		B8C1432D228B3CA20098C132 /* GarageListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C1432C228B3CA20098C132 /* GarageListing.swift */; };
 		B8C1432F228BB57A0098C132 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8C1432E228BB57A0098C132 /* GoogleService-Info.plist */; };
 		B8EECD42228C7AE30065D4A9 /* ListingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EECD41228C7AE30065D4A9 /* ListingsTableViewController.swift */; };
@@ -18,8 +18,8 @@
 		B8FDDB5B2289256C00173DDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8FDDB5A2289256C00173DDA /* Assets.xcassets */; };
 		B8FDDB692289256C00173DDA /* Garage_FinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FDDB682289256C00173DDA /* Garage_FinderTests.swift */; };
 		B8FDDB742289256C00173DDA /* Garage_FinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FDDB732289256C00173DDA /* Garage_FinderUITests.swift */; };
-		C661F9B50DBC71EADE633435 /* Pods_Garage_FinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE8742430530EC2AD59452B /* Pods_Garage_FinderTests.framework */; };
-		E41E4679B99248F49092C56E /* Pods_Garage_FinderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90C44AB04EC0EFD68C4B998 /* Pods_Garage_FinderUITests.framework */; };
+		E6393AF1D632DD08E2ED4E77 /* libPods-Garage FinderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B167DC767708BAEC6B2B8F12 /* libPods-Garage FinderTests.a */; };
+		EA964B62EB8FF16B7195937F /* libPods-Garage FinderUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A393C6EDE68BFEB1F7E9716 /* libPods-Garage FinderUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +41,10 @@
 
 /* Begin PBXFileReference section */
 		19239E5B8EB670BD71AE6B0A /* Pods-Garage FinderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Garage FinderUITests.release.xcconfig"; path = "Target Support Files/Pods-Garage FinderUITests/Pods-Garage FinderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1A393C6EDE68BFEB1F7E9716 /* libPods-Garage FinderUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Garage FinderUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2323988B97F933E511A5D246 /* Pods-Garage Finder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Garage Finder.debug.xcconfig"; path = "Target Support Files/Pods-Garage Finder/Pods-Garage Finder.debug.xcconfig"; sourceTree = "<group>"; };
-		9FE8742430530EC2AD59452B /* Pods_Garage_FinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Garage_FinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4F484201289AD8A3FCB7DFE /* Pods_Garage_Finder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Garage_Finder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CD836CCCE2C9743CABCF530 /* libPods-Garage Finder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Garage Finder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B167DC767708BAEC6B2B8F12 /* libPods-Garage FinderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Garage FinderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8C1432C228B3CA20098C132 /* GarageListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GarageListing.swift; path = Models/GarageListing.swift; sourceTree = "<group>"; };
 		B8C1432E228BB57A0098C132 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B8EECD41228C7AE30065D4A9 /* ListingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsTableViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +61,6 @@
 		B8FDDB6F2289256C00173DDA /* Garage FinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Garage FinderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8FDDB732289256C00173DDA /* Garage_FinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Garage_FinderUITests.swift; sourceTree = "<group>"; };
 		B8FDDB752289256C00173DDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B90C44AB04EC0EFD68C4B998 /* Pods_Garage_FinderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Garage_FinderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3376224004A357C75497490 /* Pods-Garage Finder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Garage Finder.release.xcconfig"; path = "Target Support Files/Pods-Garage Finder/Pods-Garage Finder.release.xcconfig"; sourceTree = "<group>"; };
 		CED4964E335194B19AD55786 /* Pods-Garage FinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Garage FinderTests.debug.xcconfig"; path = "Target Support Files/Pods-Garage FinderTests/Pods-Garage FinderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FA0FF791A90FAA3B8CB096BE /* Pods-Garage FinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Garage FinderTests.release.xcconfig"; path = "Target Support Files/Pods-Garage FinderTests/Pods-Garage FinderTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B01A90D8AC90682F43A480DD /* Pods_Garage_Finder.framework in Frameworks */,
+				164F68DB8139E4E7E8A7946A /* libPods-Garage Finder.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C661F9B50DBC71EADE633435 /* Pods_Garage_FinderTests.framework in Frameworks */,
+				E6393AF1D632DD08E2ED4E77 /* libPods-Garage FinderTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E41E4679B99248F49092C56E /* Pods_Garage_FinderUITests.framework in Frameworks */,
+				EA964B62EB8FF16B7195937F /* libPods-Garage FinderUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,9 +98,9 @@
 		7391AAF8706C0623C9D31B94 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B4F484201289AD8A3FCB7DFE /* Pods_Garage_Finder.framework */,
-				9FE8742430530EC2AD59452B /* Pods_Garage_FinderTests.framework */,
-				B90C44AB04EC0EFD68C4B998 /* Pods_Garage_FinderUITests.framework */,
+				2CD836CCCE2C9743CABCF530 /* libPods-Garage Finder.a */,
+				B167DC767708BAEC6B2B8F12 /* libPods-Garage FinderTests.a */,
+				1A393C6EDE68BFEB1F7E9716 /* libPods-Garage FinderUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -185,7 +185,6 @@
 				B8FDDB4C2289256800173DDA /* Sources */,
 				B8FDDB4D2289256800173DDA /* Frameworks */,
 				B8FDDB4E2289256800173DDA /* Resources */,
-				FAA26C8A01149B67F1BC6C58 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -369,32 +368,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FAA26C8A01149B67F1BC6C58 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Garage Finder/Pods-Garage Finder-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Garage Finder/Pods-Garage Finder-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

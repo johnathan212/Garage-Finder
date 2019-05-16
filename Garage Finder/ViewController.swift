@@ -5,13 +5,35 @@
 //
 
 import UIKit
-import FirebaseDatabase
+import Firebase
 
-class NewListingViewController: UIViewController {
+class NewListingViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     @IBOutlet weak var addressField: UITextField!
     @IBOutlet weak var priceField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var phoneNumField: UITextField!
+    
+    //upload image
+    @IBOutlet weak var imageView: UIImageView!
+    @IBAction func uploadImageButton(_ sender: Any) {
+        let image = UIImagePickerController()
+        image.delegate = self
+        image.sourceType = UIImagePickerController.SourceType.photoLibrary
+        image.allowsEditing = false
+        
+        self.present(image, animated: true) {
+            //after completion
+        }
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            imageView.image = image
+        } else {
+            print("image error")
+        }
+        self.dismiss(animated: true, completion: nil)
+    }
     
     var ref: DatabaseReference!
     
@@ -24,21 +46,24 @@ class NewListingViewController: UIViewController {
         priceField.delegate = self
         emailField.delegate = self
         phoneNumField.delegate = self
+        
     }
     //add textfield input to firebase database
     @IBAction func submitTapped(_ sender: Any){
-        let post = [
+        let listing = [
             "Address": addressField.text,
             "Price": priceField.text,
             "Email": emailField.text,
-            "Phone": phoneNumField.text
-        ]
-        ref.child("listings").childByAutoId().setValue(post)
+            "Phone": phoneNumField.text]
+        ref.child("listings").childByAutoId().setValue(listing)
         addressField.text = ""
         priceField.text = ""
         emailField.text = ""
         phoneNumField.text = ""
+        
+        
     }
+    
     
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
