@@ -20,3 +20,5 @@ Members:
 
 Johnathan Lee
 Code Reviewer: Edward Barajas
+
+Note: Should have started earlier.
