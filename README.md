@@ -16,7 +16,7 @@ Nice-to-have features(30+ hourss to implement?)
 -user location
 -Better usage of MVC architecture
 
-Members:
+Members(Solo):
 
 Johnathan Lee
 Code Reviewer: Edward Barajas
